@@ -1,4 +1,1 @@
-php_value include_path ".;C:\xampp\htdocs\myrentcar\Alquiler_coche\biblioteca\funciones\;
-C:\xampp\htdocs\myrentcar\Alquiler_coche\biblioteca\clases\;
-C:\xampp\htdocs\myrentcar\Alquiler_coche\biblioteca\clases\;
-C:\xampp\htdocs\myrentcar\Alquiler_coche\img\;"
+php_value include_path ".;C:\xampp\htdocs\myrentcar\Alquiler_coche\biblioteca\funciones\;C:\xampp\htdocs\myrentcar\Alquiler_coche\biblioteca\clases\;C:\xampp\htdocs\myrentcar\Alquiler_coche\;C:\xampp\htdocs\myrentcar\Alquiler_coche\img\;"
