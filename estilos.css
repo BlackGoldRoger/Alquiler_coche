@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "Inconsolata-VariableFont_wdth,wght";
+  src: url(fonts/Inconsolata-VariableFont_wdth,wght.ttf);
+}
+* {
+    box-sizing: border-box;
+    font-family: "Inconsolata-VariableFont_wdth,wght";
+}
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.main-header__title{
+    text-align: left;
+    font-size: 2.5em;
+    margin: 10px 20px;
+    color: #454546;
+    flex: 3 1 auto;
+}
+.main-header__title-decoration{
+    text-decoration: none;
+}
+.main-header__container{
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-btn{
+    border-radius: 12px;
+    text-decoration: none;
+    background: #212121;
+    color: white;
+}
+.car-btn{
+    border-radius: 12px;
+    text-decoration: none;
+    background: #212121;
+    color: white;
+}
+.main-menu__cars{
+    padding: 0px 10px 0px 10px;
+}
+.user-btn{
+    border: 1px solid #454546;
+    display: block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.car-btn{
+    border: 1px solid #454546;
+    display: block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.main-menu{
+    text-align: center;
+}
+.main-nav{
+    opacity: 0;
+    position: relative;
+    top: 50px;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 5;
+}
+.menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #212121;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+.menu__item{
+    text-align: center;
+    margin: auto;
+}
+.menu__link{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+.menu__link:hover{
+    background: white;
+    color: #212121;
+}
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid #454546;
+    padding: 5px 10px;
+    margin: 10px 47.5%;
+    cursor: pointer;
+}
+.Icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 80px 0px 80px;
+}
+.main-header__input{
+    border-radius: 20px;
+    flex: 1 1 auto;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    display: block;
+}
+
+/*Slider de la página principal*/
+.container-slider{
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    width: 300%;
+    height: 300%;
+    margin-left: -100%;
+}
+.slider__section{
+    width: 100%;
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.slider__btn{
+    color: #fff;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba (255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider__btn:hover{
+    background: #000;
+}
+.slider__btn--left{
+    left: 10px;
+}
+.slider__btn--right{
+    right: 10px;
+}
+.main{
+    padding: 0 20px;
+}
+
+/*Segunda parte de la página principal*/
+.main-title{
+    text-align: center;
+}
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.product{
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.product__img{
+    width: 100%;
+    height: 60%;
+    padding-top: 20px;
+    object-position: center;
+    object-fit: cover;
+}
+.product__icon{
+    border-radius: 12px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid;
+    display: block;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -2000px;
+    font-size: 0.8em;
+    background: #212121;
+    color: white;
+}
+.main-final__text{
+    text-align: center;
+}
+.product:hover .product__icon{
+    bottom: 0;
+    transition: all 0.5s;
+}
+/*Estilos para tablet*/
+@media screen and (min-width:768px) {
+    .slider{
+        height: 400px;
+    }
+}
+
+/*Estilos para web*/
+@media screen and (min-width:1024px){
+    .icon-menu{
+        display: none;
+    }
+}
