@@ -35,6 +35,10 @@ img {
     text-decoration: none;
     background: #212121;
     color: white;
+    border: 1px solid #454546;
+    display: block;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 .car-btn{
     border-radius: 12px;
@@ -42,14 +46,11 @@ img {
     background: #212121;
     color: white;
 }
+.main-menu__user{
+    margin-left: auto;
+}
 .main-menu__cars{
     padding: 0px 10px 0px 10px;
-}
-.user-btn{
-    border: 1px solid #454546;
-    display: block;
-    padding: 5px 10px;
-    cursor: pointer;
 }
 .car-btn{
     border: 1px solid #454546;
@@ -212,6 +213,28 @@ img {
     bottom: 0;
     transition: all 0.5s;
 }
+
+/*Página del registro usuario*/
+.user-section{
+    text-align: center;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    padding: 0px 0px 25px;
+    margin: 60px auto 60px auto;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.user-section__part{
+    margin: 20px 0;
+}
+.main-user__btn{
+    border-radius: 12px;
+    text-decoration: none;
+    background: #212121;
+    color: white;
+    padding: 5px 10px;
+}
 /*Estilos para tablet*/
 @media screen and (min-width:768px) {
     .slider{
@@ -220,8 +243,8 @@ img {
 }
 
 /*Estilos para web*/
-@media screen and (min-width:1024px){
+/*@media screen and (min-width:1024px){
     .icon-menu{
         display: none;
     }
-}
+}*/
