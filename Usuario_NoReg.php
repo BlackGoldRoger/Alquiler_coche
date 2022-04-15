@@ -36,9 +36,11 @@
 					<p> Email: <input type="email" class="" placeholder="&#128231; Ingresar email" name="txtemail" required></p>
 				</div>				
 				<div class="user-section__part">
+					<input type="reset" value="Borrar todo" />
+				</div>
+				<div class="user-section__part">
                     <button type="submit" class="main-user__btn" name="btnloginx">Registrar</button>
                 </div>
-				
 
 
 				</form>

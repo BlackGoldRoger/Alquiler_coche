@@ -14,9 +14,10 @@
         <header class="main-header">
             <div class="main-header__container">
                 <a href="index.php" class="main-header__title-decoration"><h1 class="main-header__title">MY RENT CAR</h1></a>
+				<!--
                 <div class="main-menu__cars">
-                    <a href="" class="car-btn"><i class="fa-solid fa-car-side"></i> coches alquilados</a>
-                </div>
+                    <a href="" class="car-btn"><
+				-->	
             </div>
         </header>
         <main class="user-main">

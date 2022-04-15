@@ -17,11 +17,11 @@ if (($nr == 1) && (password_verify($pass,$mostrar['Pwd'])) )
 	{ 
 		session_start();
 		$_SESSION['nombredelusuario']=$nombre;
-		header("Location: principal.php");
+		header("Location: pagina2.php");
 	}
 else
 	{
-	echo "<script> alert('Usuario o contraseña incorrecto.');window.location= 'index.php' </script>";
+	echo "<script> alert('Usuario o contraseña incorrecto.');window.location= 'usuario.php' </script>";
 	}
 }
 
@@ -41,7 +41,7 @@ if ($nr == 0)
 
 if(mysqli_query($conn,$queryregistrar))
 {
-	echo "<script> alert('Usuario registrado: $nombre');window.location= 'index.php' </script>";
+	echo "<script> alert('Usuario registrado: $nombre');window.location= 'Usuario.php' </script>";
 }
 else 
 {
@@ -50,7 +50,7 @@ else
 
 }else
 {
-		echo "<script> alert('No puedes registrar a este usuario: $nombre');window.location= 'index.php' </script>";
+		echo "<script> alert('No puedes registrar a este usuario: $nombre');window.location= 'Usuario_NoReg.php' </script>";
 }
 
 } 

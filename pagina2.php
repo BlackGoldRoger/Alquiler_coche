@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <?php
+
 include('conexion.php');
 session_start();
 
-if(isset($_SESSION['nombredelusuario']))
-{
-	$usuarioingresado = $_SESSION['nombredelusuario'];
-
-	header('location: pagina2.php');
-}
 ?>
 <html lang="es">
     <head>
@@ -33,13 +28,24 @@ if(isset($_SESSION['nombredelusuario']))
 
 				?>
 				<div class="main-menu__user">
-					<a href="Usuario.php" class="user-btn"><i class="fas fa-user"></i> Login Usuario</a>
+					<a href="VerPerfil.php" class="user-btn"><i class="fas fa-user"></i> Ver perfil </a>
 				</div> 
-				<!--
+				<form method="POST">
+					<tr><td colspan='2' align="center"><input type="submit" value="Cerrar sesión" name="btncerrar" /></td></tr>
+				</form>
+
+				<?php 
+
+				if(isset($_POST['btncerrar']))
+					{
+					session_destroy();
+					header('location: index.php');
+					}
+	
+				?>			
                 <div class="main-menu__cars">
                     <a href="" class="car-btn"><i class="fa-solid fa-car-side"></i> coches alquilados</a>
                 </div>
-				-->
             </div>
             <div class="main-menu">
             <span id="btn-menu"><i class="icon-menu fas fa-bars"></i></span>
