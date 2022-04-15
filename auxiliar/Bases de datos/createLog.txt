@@ -1,0 +1,10 @@
+-- Estructura de tabla para la tabla `log`
+
+CREATE TABLE `log` (
+  `LogID` int(11) NOT NULL auto_increment,
+  `Cuando` datetime default NULL,
+  `Quien` varchar(50) default NULL,
+  `Que` text,
+  PRIMARY KEY  (`LOGID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        

@@ -1,0 +1,22 @@
+-- 
+-- Estructura de tabla para la tabla `clientes`
+-- 
+
+CREATE TABLE `clientes` (
+  `ClienteID` smallint(5) unsigned NOT NULL auto_increment,
+  `Nombre` varchar(20) NOT NULL,
+  `Apellidos` varchar(25) NOT NULL,
+  `EMail` varchar(50) NOT NULL,
+  `PalabraPaso` varchar(16) default NULL,
+  `AceptaCookies` enum('S','N') default 'N',
+  `Suscriptor` enum('S','N') default 'N',
+  `Direccion` varchar(50) NOT NULL,
+  `Ciudad` varchar(50) NOT NULL,
+  `Provincia` varchar(50) default NULL,
+  `CodigoPostal` varchar(10) default NULL,
+  `Telefono` varchar(20) default NULL,
+  `UltimaMod` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `FechaCreacion` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`ClienteID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        
