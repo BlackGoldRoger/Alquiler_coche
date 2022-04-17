@@ -1,24 +1,8 @@
 <?php
-
-	class conectar{
-		private $servidor="localhost";
-		private $usuario="root";
-		private $bd="myrentcar";
-		private $password="";
-		
-		public function conexion(){
-			$conexion = mysqli_connect($this->servidor,
-										$this->usuario,
-										$this->password,
-										$this->bd);
-			return $conexion;
-		}
-	}	
-	$conn = new conectar();
+$conn = new mysqli("localhost","root","","myrentcar");
 	
-	if(!$conn->conexion())
-		{
-		echo "No hay conexión.";
-		}
-
+	if($conn->connect_errno)
+	{
+		echo "No hay conexión: (" . $conn->connect_errno . ") " . $conn->connect_error;
+	}
 ?>

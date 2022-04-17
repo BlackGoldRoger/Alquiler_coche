@@ -31,7 +31,7 @@ session_start();
 					<a href="VerPerfil.php" class="user-btn"><i class="fas fa-user"></i> Ver mi perfil </a>
 				</div> 
 				<form method="POST">
-					<tr><td colspan='2' align="center"><input type="submit" value="Cerrar sesión" name="btncerrar" /></td></tr>
+					<tr><td colspan='2' align="center"><input type="submit" class="logout-btn" value="Cerrar sesión" name="btncerrar" /></td></tr>
 				</form>
 
 				<?php 

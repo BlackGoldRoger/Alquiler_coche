@@ -40,6 +40,16 @@ img {
     padding: 5px 10px;
     cursor: pointer;
 }
+.logout-btn{
+	border-radius: 12px;
+    text-decoration: none;
+    background: #212121;
+    color: white;
+    border: 1px solid #454546;
+    display: block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 .car-btn{
     border-radius: 12px;
     text-decoration: none;

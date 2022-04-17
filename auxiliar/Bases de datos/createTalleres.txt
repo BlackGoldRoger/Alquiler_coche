@@ -2,18 +2,15 @@
 -- Estructura de tabla para la tabla `clientes`
 -- 
 
-CREATE TABLE `usuarios` (
-  `usuario_ID` smallint(5) unsigned NOT NULL auto_increment,
-  `nom_usu` varchar(20) NOT NULL,
-  `pwd_usu` varchar(255) NOT NULL,
-  `pass_usu` varchar(20) NOT NULL,
-  `email_usu` varchar(50) NOT NULL,
-  `ape_usu` varchar(25) NOT NULL,
-  `dir_usu` varchar(50) NOT NULL,
-  `pob_usu` varchar(50) NOT NULL,
-  `prov_usu` varchar(50) default NULL,
-  `cpos_usu` varchar(10) default NULL,
-  `tlf_usu` varchar(20) default NULL,
-  PRIMARY KEY  (`usuario_ID`)
+CREATE TABLE `talleres` (
+  `taller_ID` smallint(5) unsigned NOT NULL auto_increment,
+  `nom_tal` varchar(20) NOT NULL,
+  `email_tal` varchar(50) NOT NULL,
+  `dir_tal` varchar(50) NOT NULL,
+  `pob_tal` varchar(50) NOT NULL,
+  `prov_tal` varchar(50) default NULL,
+  `cpos_tal` varchar(10) default NULL,
+  `tlf_tal` varchar(20) default NULL,
+  PRIMARY KEY  (`taller_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
         

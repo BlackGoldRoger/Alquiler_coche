@@ -1,19 +1,15 @@
 -- 
--- Estructura de tabla para la tabla `clientes`
+-- Estructura de tabla para la tabla `Coches`
 -- 
 
-CREATE TABLE `usuarios` (
-  `usuario_ID` smallint(5) unsigned NOT NULL auto_increment,
-  `nom_usu` varchar(20) NOT NULL,
-  `pwd_usu` varchar(255) NOT NULL,
-  `pass_usu` varchar(20) NOT NULL,
-  `email_usu` varchar(50) NOT NULL,
-  `ape_usu` varchar(25) NOT NULL,
-  `dir_usu` varchar(50) NOT NULL,
-  `pob_usu` varchar(50) NOT NULL,
-  `prov_usu` varchar(50) default NULL,
-  `cpos_usu` varchar(10) default NULL,
-  `tlf_usu` varchar(20) default NULL,
-  PRIMARY KEY  (`usuario_ID`)
+CREATE TABLE `coches` (
+  `coche_ID` smallint(5) unsigned NOT NULL auto_increment,
+  `mat_che` varchar(10) NOT NULL,
+  `marca_che` varchar(20) NOT NULL,
+  `mod_che` varchar(20) NOT NULL,
+  `col_che` varchar(20) NOT NULL,
+  `plaz_che` smallint(1) NOT NULL,
+  `precio_che` int(3) NOT NULL,
+  PRIMARY KEY  (`coche_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
         

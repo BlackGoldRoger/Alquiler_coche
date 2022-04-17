@@ -1,10 +1,10 @@
 <?php
 
-include('conexion.php');
+require_once('conexion.php');
 
 $nombre = $_POST["txtusu"];
 $pass 	= $_POST["txtpass"];
-$email	= $_POST["txtemail"];
+
 
 //Para iniciar sesión
 if(isset($_POST["btnlogin"]))
@@ -29,7 +29,7 @@ else
 //Para registrar
 if(isset($_POST["btnregistrar"]))
 {
-
+$email	= $_POST["txtemail"];
 $queryusuario 	= mysqli_query($conn,"SELECT * FROM usuarios WHERE nom_usu = '$nombre'");
 $nfilas			= mysqli_num_rows($queryusuario); 
 

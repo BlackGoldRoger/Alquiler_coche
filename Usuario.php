@@ -26,9 +26,9 @@
                     <h1>¿Ya estás registrado?</h1>
                 </div>
 				<!--Formulario login -->
-				<form id="frmlogin" class="grupo-entradas" method="POST" action="login_registrar.php">
-				<input type="text" class="cajaentradatexto" placeholder="&#128273; Ingresar usuario" name="txtusu" required>
-				<input type="password" class="cajaentradatexto" placeholder="&#128272; Ingresar contraseña" name="txtpass" required>
+				<form id="frmlogin" class="user-section__part" method="POST" action="login_registrar.php">
+				<input type="text" class="user-section__part" placeholder="&#128273; Ingresar usuario" name="txtusu" required>
+				<input type="password" class="user-section__part" placeholder="&#128272; Ingresar contraseña" name="txtpass" required>
 				<!--
 				<input type="checkbox" class="checkboxvai"><span>Recordar contraseña</span>
 				-->				
