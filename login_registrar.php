@@ -2,18 +2,19 @@
 
 include('conexion.php');
 
-$nombre = $_POST["txtusuario"];
-$pass 	= $_POST["txtpassword"];
+$nombre = $_POST["txtusu"];
+$pass 	= $_POST["txtpass"];
+$email	= $_POST["txtemail"];
 
 //Para iniciar sesión
-if(isset($_POST["btnloginx"]))
+if(isset($_POST["btnlogin"]))
 {
 
-$queryusuario = mysqli_query($conn,"SELECT * FROM clientes WHERE Usuario = '$nombre'");
-$nr 		= mysqli_num_rows($queryusuario); 
-$mostrar	= mysqli_fetch_array($queryusuario); 
+$queryusuario 	= mysqli_query($conn,"SELECT * FROM usuarios WHERE nom_usu = '$nombre'");
+$nfilas			= mysqli_num_rows($queryusuario); 
+$mostrar		= mysqli_fetch_array($queryusuario); 
 
-if (($nr == 1) && (password_verify($pass,$mostrar['Pwd'])) )
+if (($nfilas == 1) && (password_verify($pass,$mostrar['pwd_usu'])) )
 	{ 
 		session_start();
 		$_SESSION['nombredelusuario']=$nombre;
@@ -26,28 +27,27 @@ else
 }
 
 //Para registrar
-if(isset($_POST["btnregistrarx"]))
+if(isset($_POST["btnregistrar"]))
 {
 
-$queryusuario 	= mysqli_query($conn,"SELECT * FROM clientes WHERE Usuario = '$nombre'");
-$nr 			= mysqli_num_rows($queryusuario); 
+$queryusuario 	= mysqli_query($conn,"SELECT * FROM usuarios WHERE nom_usu = '$nombre'");
+$nfilas			= mysqli_num_rows($queryusuario); 
 
-if ($nr == 0)
+if ($nfilas == 0)
 {
 
-	$pass_fuerte = password_hash($pass, PASSWORD_BCRYPT);
-	$queryregistrar = "INSERT INTO clientes(Usuario, Pwd) values ('$nombre','$pass_fuerte')";
+	$pass_encrip	= password_hash($pass, PASSWORD_BCRYPT);
+	$queryregistrar = "INSERT INTO usuarios(nom_usu, pwd_usu, pass_usu, email_usu) values ('$nombre','$pass_encrip','$pass','$email')";
 	
 
-if(mysqli_query($conn,$queryregistrar))
-{
-	echo "<script> alert('Usuario registrado: $nombre');window.location= 'Usuario.php' </script>";
-}
-else 
-{
-	echo "Error: " .$queryregistrar."<br>".mysql_error($conn);
-}
-
+	if(mysqli_query($conn,$queryregistrar))
+		{
+			echo "<script> alert('Usuario registrado: $nombre');window.location= 'Usuario.php' </script>";
+		}
+		else 
+		{
+			echo "Error: " .$queryregistrar."<br>".mysql_error($conn);
+		}
 }else
 {
 		echo "<script> alert('No puedes registrar a este usuario: $nombre');window.location= 'Usuario_NoReg.php' </script>";

@@ -27,19 +27,19 @@
 				<!--Formulario registro -->
 				<form id="frmlogin" class="" method="POST" action="login_registrar.php">
 				<div class="user-section__part">
-					<p> Usuario: <input type="text" class="" placeholder="&#128273; Ingresar usuario" name="txtusuario" required></p>
+					<p> Usuario: <input type="text" class="" placeholder="&#128273; Ingresar usuario" name="txtusu" required></p>
 				</div>
 				<div class="user-section__part">
-					<p> Contraseña: <input type="password" class="" placeholder="&#128274; Ingresar contraseña" name="txtpassword" required></p>
+					<p> Contraseña: <input type="password" class="" placeholder="&#128274; Ingresar contraseña" name="txtpass" required></p>
 				</div>
 				<div class="user-section__part">
-					<p> Email: <input type="email" class="" placeholder="&#128231; Ingresar email" name="txtemail" required></p>
+					<p> Email: <input type="email" class="" placeholder="@ Ingresar email" name="txtemail" required></p>
 				</div>				
 				<div class="user-section__part">
 					<input type="reset" value="Borrar todo" />
 				</div>
 				<div class="user-section__part">
-                    <button type="submit" class="main-user__btn" name="btnloginx">Registrar</button>
+                    <button type="submit" class="main-user__btn" name="btnregistrar">Registrar</button>
                 </div>
 
 

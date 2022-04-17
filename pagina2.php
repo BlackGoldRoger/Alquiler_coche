@@ -28,7 +28,7 @@ session_start();
 
 				?>
 				<div class="main-menu__user">
-					<a href="VerPerfil.php" class="user-btn"><i class="fas fa-user"></i> Ver perfil </a>
+					<a href="VerPerfil.php" class="user-btn"><i class="fas fa-user"></i> Ver mi perfil </a>
 				</div> 
 				<form method="POST">
 					<tr><td colspan='2' align="center"><input type="submit" value="Cerrar sesión" name="btncerrar" /></td></tr>
@@ -44,7 +44,7 @@ session_start();
 	
 				?>			
                 <div class="main-menu__cars">
-                    <a href="" class="car-btn"><i class="fa-solid fa-car-side"></i> coches alquilados</a>
+                    <a href="" class="car-btn"><i class="fa-solid fa-car-side"></i> Mis coches alquilados</a>
                 </div>
             </div>
             <div class="main-menu">

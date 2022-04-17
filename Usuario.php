@@ -27,12 +27,12 @@
                 </div>
 				<!--Formulario login -->
 				<form id="frmlogin" class="grupo-entradas" method="POST" action="login_registrar.php">
-				<input type="text" class="cajaentradatexto" placeholder="&#128273; Ingresar usuario" name="txtusuario" required>
-				<input type="password" class="cajaentradatexto" placeholder="&#128272; Ingresar contraseña" name="txtpassword" required>
+				<input type="text" class="cajaentradatexto" placeholder="&#128273; Ingresar usuario" name="txtusu" required>
+				<input type="password" class="cajaentradatexto" placeholder="&#128272; Ingresar contraseña" name="txtpass" required>
 				<!--
 				<input type="checkbox" class="checkboxvai"><span>Recordar contraseña</span>
 				-->				
-				<button type="submit" class="main-user__btn" name="btnloginx">Iniciar sesión</button>
+				<button type="submit" class="main-user__btn" name="btnlogin">Iniciar sesión</button>
 
 
 				</form>
@@ -51,9 +51,11 @@
                 <div class="user-section__part">
                     <a href="" class="main-user__btn">He olvidado mi contraseña</a>
                 </div>
+
                 <div class="user-section__part">
                     <a href="Usuario_NoReg.php" class="main-user__btn">¿No estas registrado? ¡Registrate ya!</a>
                 </div>
+
             </section>
         </main>
     </body>
