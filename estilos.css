@@ -8,6 +8,7 @@
 }
 body {
     margin: 0;
+	background-color: lightgrey;
 }
 img {
     display: block;
@@ -58,6 +59,10 @@ img {
 }
 .main-menu__user{
     margin-left: auto;
+	padding: 0px 10px 0px 0px;
+}
+.main-menu__cerrar{
+    /*padding: 0px 0px 0px 10px;*/
 }
 .main-menu__cars{
     padding: 0px 10px 0px 10px;
@@ -224,6 +229,30 @@ img {
     transition: all 0.5s;
 }
 
+/*Pié de página*/
+.footer-section__container{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 650px 100px;
+    padding: 30px 0px 50px 0px;
+}
+.footer-icon{
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 10px;
+    text-decoration: none;
+    background: #212121;
+    color: white;
+    padding: 10px 10px;
+	cursor: pointer;
+    margin: 10px;
+}
+
 /*Página del registro usuario*/
 .user-section{
     text-align: center;
@@ -238,19 +267,23 @@ img {
 .user-section__part{
     margin: 20px 0;
 }
+.Inputs{
+	text-transform: lowercase;
+}
 .main-user__btn{
     border-radius: 12px;
     text-decoration: none;
     background: #212121;
     color: white;
     padding: 5px 10px;
+	cursor: pointer;
 }
-/*Estilos para tablet*/
+/*Estilos para tablet
 @media screen and (min-width:768px) {
     .slider{
         height: 400px;
     }
-}
+}*/
 
 /*Estilos para web*/
 /*@media screen and (min-width:1024px){

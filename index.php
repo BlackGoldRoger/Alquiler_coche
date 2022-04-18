@@ -108,7 +108,20 @@ if(isset($_SESSION['nombredelusuario']))
                         <a href=""><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
                     </div>
             </section>
-            <h3 class="main-final__text">Fin de la cita</h3>
+			<section>
+			<div class="footer-section__container">
+			    <div class="footer-section__element">
+			        <h2>Siguenos en nuestras redes</h2>
+			        <a href="" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
+			        <a href="" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+			        <a href="" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+			        <a href="" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+			</div>
+			<div>
+			    <h1></h1>
+			</div>
+			</section>
         </main>
             <script src="Slider.js"></script>
             <script src="menu.js"></script>

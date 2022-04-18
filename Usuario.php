@@ -27,8 +27,8 @@
                 </div>
 				<!--Formulario login -->
 				<form id="frmlogin" class="user-section__part" method="POST" action="login_registrar.php">
-				<input type="text" class="user-section__part" placeholder="&#128273; Ingresar usuario" name="txtusu" required>
-				<input type="password" class="user-section__part" placeholder="&#128272; Ingresar contraseña" name="txtpass" required>
+				<input type="text" class="user-section__part Inputs fa" placeholder="&#xf084; Ingresar usuario" name="txtusu" required>
+				<input type="password" class="user-section__part Inputs fa" placeholder="&#xf023; Ingresar contraseña" name="txtpass" required>
 				<!--
 				<input type="checkbox" class="checkboxvai"><span>Recordar contraseña</span>
 				-->				
@@ -36,18 +36,6 @@
 
 
 				</form>
-				<!--
-                <div class="user-section__part">
-                    <input type="text" class="" placeholder="Nombre de usuario..">
-                </div>
-                <div class="user-section__part">
-                    <input type="password" class="" placeholder="Contraseña..">
-                </div>
-				
-                <div class="user-section__part">
-                    <a href="" class="main-user__btn">Login</a>
-                </div>
-				-->
                 <div class="user-section__part">
                     <a href="" class="main-user__btn">He olvidado mi contraseña</a>
                 </div>

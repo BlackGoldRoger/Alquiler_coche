@@ -18,19 +18,22 @@ session_start();
     <body>
         <header class="main-header">
             <div class="main-header__container">
-                <a href="index.php" class="main-header__title-decoration"><h1 class="main-header__title">MY RENT CAR</h1></a>
-				<?php
-				if(isset($_SESSION['nombredelusuario']))
-					{
-						$usuarioingresado = $_SESSION['nombredelusuario'];
-						echo "<h1>Bienvenido: $usuarioingresado </h1>";
-					}
+				<div class="main-header__welcome">
+				<a href="index.php" class="main-header__title-decoration"><h1 class="main-header__title">MY RENT CAR</h1></a>
+					<?php
+					if(isset($_SESSION['nombredelusuario']))
+						{
+							$usuarioingresado = $_SESSION['nombredelusuario'];
+							echo "<h3>Bienvenido: $usuarioingresado </h1>";
+						}
 
-				?>
+					?>
+				</div>
 				<div class="main-menu__user">
 					<a href="VerPerfil.php" class="user-btn"><i class="fas fa-user"></i> Ver mi perfil </a>
 				</div> 
-				<form method="POST">
+				<div class="main-menu__cerrar">
+				    <form method="POST">
 					<tr><td colspan='2' align="center"><input type="submit" class="logout-btn" value="Cerrar sesión" name="btncerrar" /></td></tr>
 				</form>
 
@@ -42,7 +45,8 @@ session_start();
 					header('location: index.php');
 					}
 	
-				?>			
+				?>
+				</div>
                 <div class="main-menu__cars">
                     <a href="" class="car-btn"><i class="fa-solid fa-car-side"></i> Mis coches alquilados</a>
                 </div>
