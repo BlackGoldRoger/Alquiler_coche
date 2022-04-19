@@ -278,6 +278,32 @@ img {
     padding: 5px 10px;
 	cursor: pointer;
 }
+
+/*Página de mantenimiento*/
+
+.maintenance-container{
+    position: relative;
+    width: 100%;
+}
+.maintenance-img{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+}
+.maintenance-container__footer{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    margin: 0px 0px 100px 0;
+    padding: 0px 700px;
+}
+.maintenance-footer{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    padding: 10px;
+}
+
 /*Estilos para tablet
 @media screen and (min-width:768px) {
     .slider{
