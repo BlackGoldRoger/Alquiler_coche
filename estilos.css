@@ -231,18 +231,22 @@ img {
 
 /*Pié de página*/
 .footer-section__container{
-    border-top-style: solid;
-    border-bottom-style: solid;
     text-align: center;
+    margin: auto;
+    width: 75%;
+    position: relative;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    margin: 10px 650px 100px;
-    padding: 30px 0px 50px 0px;
+    padding: 30px 0px 70px 0px;
+}
+.footer-section__mini-container{
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    padding: 0 40px 30px 40px;
 }
 .footer-icon{
-    border: 1px solid;
+    border: 0px solid;
     border-radius: 12px;
     padding: 10px;
     text-decoration: none;
@@ -250,7 +254,7 @@ img {
     color: white;
     padding: 10px 10px;
 	cursor: pointer;
-    margin: 10px;
+    margin: 5px;
 }
 
 /*Página del registro usuario*/
