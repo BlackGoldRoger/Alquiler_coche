@@ -15,7 +15,7 @@
             <div class="main-header__container">
                 <a href="index.php" class="main-header__title-decoration"><h1 class="main-header__title">MY RENT CAR</h1></a>
                 <div class="main-menu__cars">
-                    <a href="" class="car-btn"><i class="fa-solid fa-car-side"></i> coches alquilados</a>
+                    <!--<a href="Mantenimiento.html" class="car-btn"><i class="fa-solid fa-car-side"></i> coches alquilados</a>-->
                 </div>
             </div>
         </header>
@@ -27,16 +27,22 @@
 				<!--Formulario registro -->
 				<form id="frmlogin" class="" method="POST" action="login_registrar.php">
 				<div class="user-section__part">
-					<p> Usuario: <input type="text" class="" placeholder="&#128273; Ingresar usuario" name="txtusu" required></p>
+                    <div class="cool">
+                        <p ><i class="fas fa-user"></i> <input type="text" class="cool-element" placeholder="Ingresar usuario" name="txtusu" autocomplete="off" required></p>
+                    </div>
 				</div>
 				<div class="user-section__part">
-					<p> Contraseña: <input type="password" class="" placeholder="&#128274; Ingresar contraseña" name="txtpass" required></p>
+					<div class="cool">
+					    <p><i class="fa-solid fa-lock"></i> <input type="password" class="cool-element" placeholder="Ingresar contraseña" name="txtpass" autocomplete="off" required></p>
+					</div>
 				</div>
 				<div class="user-section__part">
-					<p> Email: <input type="email" class="" placeholder="@ Ingresar email" name="txtemail" required></p>
+					<div class="cool">
+					    <p><i class="fa-solid fa-at"></i> <input type="email" class="cool-element" placeholder="Ingresar email" name="txtemail" autocomplete="off" required></p>
+					</div>
 				</div>				
 				<div class="user-section__part">
-					<input type="reset" value="Borrar todo" />
+					<input type="reset" class="main-user__btn" value="Borrar todo" />
 				</div>
 				<div class="user-section__part">
                     <button type="submit" class="main-user__btn" name="btnregistrar">Registrar</button>

@@ -44,11 +44,10 @@ session_start();
 					session_destroy();
 					header('location: index.php');
 					}
-	
 				?>
 				</div>
                 <div class="main-menu__cars">
-                    <a href="" class="car-btn"><i class="fa-solid fa-car-side"></i> Mis coches alquilados</a>
+                    <a href="Mantenimiento.html" class="car-btn"><i class="fa-solid fa-car-side"></i> Mis coches alquilados</a>
                 </div>
             </div>
             <div class="main-menu">
@@ -91,7 +90,7 @@ session_start();
                             <h3 class="product__title">Hyundai</h3>
                             <span class="product__price">50€ al día</span>
                         </div>
-                        <a href=""><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
+                        <a href="Mantenimiento.html"><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
                     </div>
                     <div class="product">
                         <img src="img/Utilitario1.jpg" alt="" class="product__img">
@@ -99,7 +98,7 @@ session_start();
                             <h3 class="product__title">Honda</h3>
                             <span class="product__price">30€ al día</span>
                         </div>
-                        <a href=""><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
+                        <a href="Mantenimiento.html"><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
                     </div>
                     <div class="product">
                         <img src="img/SUV2.jpg" alt="" class="product__img">
@@ -107,7 +106,7 @@ session_start();
                             <h3 class="product__title">Peugeot</h3>
                             <span class="product__price">50€ al día</span>
                         </div>
-                        <a href=""><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
+                        <a href="Mantenimiento.html"><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
                     </div>
                     <div class="product">
                         <img src="img/Utilitario2.jpg" alt="" class="product__img">
@@ -115,7 +114,7 @@ session_start();
                             <h3 class="product__title">Seat</h3>
                             <span class="product__price">25€ al día</span>
                         </div>
-                        <a href=""><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
+                        <a href="Mantenimiento.html"><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
                     </div>
             </section>
             <section>

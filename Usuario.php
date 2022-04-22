@@ -27,17 +27,29 @@
                 </div>
 				<!--Formulario login -->
 				<form id="frmlogin" class="user-section__part" method="POST" action="login_registrar.php">
-				<input type="text" class="user-section__part Inputs fa" placeholder="&#xf084; Ingresar usuario" name="txtusu" required>
-				<input type="password" class="user-section__part Inputs fa" placeholder="&#xf023; Ingresar contraseña" name="txtpass" required>
+                <div class="user-section__part">
+                    <div class="cool">
+                        <p ><i class="fas fa-user"></i> <input type="text" class="cool-element" placeholder="Ingresar usuario" name="txtusu" autocomplete="off" required></p>
+                    </div>
+                </div>
+                <div class="user-section__part">
+                    <!--<div class="cool user-buttons">
+                        <i class="fa-solid fa-lock fa-sm"></i> <input type="password" class="user-section__part cool-element" placeholder="Ingresar contraseña" name="txtpass" required>
+                    </div>-->
+                    <div class="cool">
+					    <p><i class="fa-solid fa-lock"></i> <input type="password" class="cool-element" placeholder="Ingresar contraseña" name="txtpass" autocomplete="off" required></p>
+					</div>
+                </div>
 				<!--
 				<input type="checkbox" class="checkboxvai"><span>Recordar contraseña</span>
-				-->				
-				<button type="submit" class="main-user__btn" name="btnlogin">Iniciar sesión</button>
-
-
+				-->
+				<div class="">
+				    <button type="submit" class="main-user__btn" name="btnlogin">Iniciar sesión</button>    
+				</div>
+								
 				</form>
                 <div class="user-section__part">
-                    <a href="" class="main-user__btn">He olvidado mi contraseña</a>
+                    <a href="Mantenimiento.html" class="main-user__btn">He olvidado mi contraseña</a>
                 </div>
 
                 <div class="user-section__part">
