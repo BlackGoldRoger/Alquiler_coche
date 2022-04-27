@@ -53,8 +53,10 @@ if(isset($_SESSION['nombredelusuario']))
                 </nav>
             </div>
             <div class="Icons">
-                    <input type="search" class="main-header__input" placeholder="Buscar productos.."><i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="form" class="main-header__input" placeholder="Buscar productos.."><i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <ul id="resul">
+            </ul>
         </header>
             <div class="container-slider">
                 <div class="slider" id="slider">
@@ -126,6 +128,7 @@ if(isset($_SESSION['nombredelusuario']))
 			</div>
 			</section>
         </main>
+            <scrip src="Buscador.js"></scrip>
             <script src="Slider.js"></script>
             <script src="menu.js"></script>
     </body>
