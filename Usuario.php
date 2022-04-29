@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+<?php
 
+include('conexion.php');
+session_start();
+
+?>
 <html lang="es">
     <head>
         <meta charset="utf-8">
@@ -57,6 +62,9 @@
                 </div>
 
             </section>
+			<?php
+			include('piePagina.html');
+			?>
         </main>
     </body>
 </html>

@@ -30,7 +30,7 @@ session_start();
 					?>
 				</div>
 				<div class="main-menu__user">
-					<a href="VerPerfil.php" class="user-btn"><i class="fas fa-user"></i> Ver mi perfil </a>
+					<a href="vermiperfil.php" class="user-btn"><i class="fas fa-user"></i> Ver mi perfil </a>
 				</div> 
 				<div class="main-menu__cerrar">
 				    <form method="POST">
