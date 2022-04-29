@@ -1,6 +1,5 @@
 <?php
-	global $conn;
-	$conn = new mysqli("localhost","root","","myrentcar");
+$conn = new mysqli("localhost","root","","myrentcar");
 	
 	if($conn->connect_errno)
 	{

@@ -70,9 +70,6 @@
                 </div>
 				-->
             </section>
-			<?php
-			include('piePagina.html');
-			?>
         </main>
     </body>
 </html>

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <?php
 include('conexion.php');
 session_start();
-echo $conn->t;
+
 if(isset($_SESSION['nombredelusuario']))
 {
-
 	$usuarioingresado = $_SESSION['nombredelusuario'];
 
 	header('location: pagina2.php');
@@ -22,8 +20,6 @@ if(isset($_SESSION['nombredelusuario']))
         
         <!--Miniatura de la página--><link rel="icon" type="image/png" href="img/Audi.jpg">
     </head>
-	
-	
     <body>
         <header class="main-header">
             <div class="main-header__container">
@@ -114,9 +110,23 @@ if(isset($_SESSION['nombredelusuario']))
                         <a href="Mantenimiento.html"><i class="product__icon fa-solid fa-cart-arrow-down"> ALQUILALO YA!</i></a>
                     </div>
             </section>
-			<?php
-			include('piePagina.html');
-			?>
+			<section>
+			<div class="footer-section__container">
+			    <div class="footer-section__element">
+                    <div class="footer-section__mini-container">
+                        <h2>Siguenos en nuestras redes</h2>
+                        <a href="Mantenimiento.html" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="Mantenimiento.html" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="Mantenimiento.html" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="Mantenimiento.html" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+			        
+				</div>
+			</div>
+			<div>
+			    <h1></h1>
+			</div>
+			</section>
         </main>
             <scrip src="Buscador.js"></scrip>
             <script src="Slider.js"></script>
